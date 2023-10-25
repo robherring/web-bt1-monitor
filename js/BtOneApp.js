@@ -106,7 +106,7 @@ class BtOneApp extends BLEDevice {
     data['load_current'] = (dataView.getInt16(13) * 0.01).toFixed(2);
     data['load_power'] = dataView.getInt16(15);
     data['pv_voltage'] = (dataView.getInt16(17) * 0.1).toFixed(2);
-    data['pv_current'] = (dataView.getInt16(19) * 0.01).toFixed(2);
+    data['pv_current'] = (dataView.getInt16(19) * 0.1).toFixed(2);
     data['pv_power'] = dataView.getInt16(21);
     data['max_charging_power_today'] = dataView.getInt16(33);
     data['max_discharging_power_today'] = dataView.getInt16(35);
